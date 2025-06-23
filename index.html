@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Redpill – Alpha Community</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #000;
+    }
+    .matrix {
+      background: url('matrix-code.gif') center/cover;
+      opacity: 0.08;
+      z-index: 0;
+      position: absolute;
+      inset: 0;
+    }
+    .glitch {
+      animation: glitch 1s infinite;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 1px 1px red, -1px -1px lime; }
+      50% { text-shadow: -2px 1px red, 1px -2px lime; }
+      100% { text-shadow: 1px -1px red, -1px 2px lime; }
+    }
+  </style>
+</head>
+<body class="relative overflow-x-hidden">
+
+  <section class="relative h-screen flex items-center justify-center text-center">
+    <div class="absolute inset-0 matrix"></div>
+    <div class="z-10 space-y-8">
+      <img src="redpill.png" alt="Red Pill" class="mx-auto w-32 animate-pulse"/>
+      <h1 class="text-4xl md:text-6xl font-bold glitch uppercase">Escape the Matrix.<br/>Trade What’s Real.</h1>
+      <p class="text-gray-300 text-lg md:text-xl">The Solana-based alpha group for the awakened trader.</p>
+      <a href="https://discord.gg/yourlink" target="_blank"
+         class="inline-block mt-4 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-full animate-pulse shadow-lg transition">
+        ENTER THE REDPILL
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
